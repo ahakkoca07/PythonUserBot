@@ -77,7 +77,7 @@ setup_venv() {
 download_files() {
   echo -e "${YELLOW}Downloading files from repository...${NC}"
   
-  mkdir -p "$BOT_DIR/modules"
+  mkdir -p "$BOT_DIR/mymodules"
   
   # Download filelist_android.txt
   if ! curl -s "$FILELIST_URL" -o "$BOT_DIR/filelist_android.txt"; then
@@ -131,7 +131,7 @@ authorized_users = YOUR_USER_ID
 [Commands]
 # Define command mappings in format:
 # command = module.function
-# The module will be loaded from ./modules/ directory
+# The module will be loaded from ./mymodules/ directory
 hello = hello.hello_world
 echo = echo.echo_text
 

@@ -10,7 +10,7 @@ A modular Telegram userbot with dynamic command loading and user authentication.
 ├── auth.py              # Authentication module
 ├── modules.py           # Module manager with built-in commands
 ├── config.ini           # Configuration file
-└── modules/             # Custom module directory
+└── mymodules/             # Custom module directory
     ├── hello.py         # Example hello module
     └── echo.py          # Example echo module
 ```
@@ -21,8 +21,8 @@ A modular Telegram userbot with dynamic command loading and user authentication.
 - **Authentication**: Checks if users are authorized via config.ini or temporary list
 - **Modular Structure**: Dynamically loads modules from the `./modules/` directory
 - **Built-in Commands**:
-  - `.reload` - Reloads the config file and modules
   - `.start` - Shows userbot status and uptime
+  - `.reload` - Reloads the config file and modules
   - `.help` - Lists all available commands
 
 ## Setup
@@ -37,7 +37,7 @@ A modular Telegram userbot with dynamic command loading and user authentication.
    - Add authorized user IDs
    - Define command mappings
 
-3. Create custom modules in the `./modules/` directory
+3. Create custom modules in the `./mymodules/` directory
 
 4. Run the userbot:
    ```bash
@@ -46,7 +46,7 @@ A modular Telegram userbot with dynamic command loading and user authentication.
 
 ## Creating Custom Modules
 
-1. Create a new Python file in the `./modules/` directory
+1. Create a new Python file in the `./mymodules/` directory
 2. Define your async function with parameters:
    ```python
    async def your_function(client, chat_id, user_id, message_id, reply_user_id=None, reply_message_id=None):
@@ -64,7 +64,7 @@ Once running, the userbot will process commands that start with `.` in any chat.
 
 Example usage:
 - `.start` - Check if the bot is alive and see uptime
-- `.help` - Show all available commands
 - `.reload` - Reload configuration and modules
+- `.help` - Show all available commands
 - `.hello` - Run the example hello function
 - `.echo text` - Echo back the text after the command

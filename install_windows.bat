@@ -53,8 +53,8 @@ if not exist "%BOT_DIR%" (
     mkdir "%BOT_DIR%"
 )
 
-if not exist "%BOT_DIR%\modules" (
-    mkdir "%BOT_DIR%\modules"
+if not exist "%BOT_DIR%\mymodules" (
+    mkdir "%BOT_DIR%\mymodules"
 )
 
 :: Download file list and files from repo
@@ -122,7 +122,7 @@ if not exist "%BOT_DIR%\config.ini" (
         echo [Commands]
         echo # Define command mappings in format:
         echo # command = module.function
-        echo # The module will be loaded from ./modules/ directory
+        echo # The module will be loaded from ./mymodules/ directory
         echo hello = hello.hello_world
         echo echo = echo.echo_text
         echo.

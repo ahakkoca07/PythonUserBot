@@ -5,18 +5,19 @@ auth.py
 modules.py
 requirements.txt
 README.md
+version.txt
 
 # Configuration example (will not overwrite existing)
 config.ini.example
 
 # Module files
-modules/hello.py
-modules/echo.py
+mymodules/hello.py
+mymodules/echo.py
 
 # Installation scripts
-# install.sh
-# install.bat
-# install_android.sh
+# install_linux.sh
+# install_windows.bat
+install_android.sh
 
 # Service files
 # pythonuserbot.service

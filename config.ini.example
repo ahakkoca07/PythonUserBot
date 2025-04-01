@@ -11,7 +11,7 @@ authorized_users = 123456789,987654321
 [Commands]
 # Define command mappings in format:
 # command = module.function
-# The module will be loaded from ./modules/ directory
+# The module will be loaded from ./mymodules/ directory
 hello = hello.hello_world
 echo = echo.echo_text
 
