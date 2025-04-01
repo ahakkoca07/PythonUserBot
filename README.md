@@ -68,3 +68,8 @@ Example usage:
 - `.help` - Show all available commands
 - `.hello` - Run the example hello function
 - `.echo text` - Echo back the text after the command
+
+## Todo
+- [ ] Instead of directly pulling the files, pull the latest release.
+- [ ] Add complete version checking for updating.
+- [ ] Create run_bot files.
