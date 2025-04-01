@@ -53,7 +53,7 @@ async def load_modules(config: Any) -> None:
             
             # Make sure the module name has modules. prefix for proper importing
             if not module_name.startswith('modules.'):
-                module_name = f'modules.{module_name}'
+                module_name = f'mymodules.{module_name}'
             
             # Import the module
             module = importlib.import_module(module_name)

@@ -14,9 +14,9 @@ modules/hello.py
 modules/echo.py
 
 # Installation scripts
-install.sh
-install.bat
-install_android.sh
+# install.sh
+# install.bat
+# install_android.sh
 
 # Service files
-pythonuserbot.service
+# pythonuserbot.service

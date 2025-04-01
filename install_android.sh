@@ -8,7 +8,7 @@ set -e
 REPO_OWNER="ahakkoca07"
 REPO_NAME="PythonUserBot"
 REPO_BASE="https://raw.githubusercontent.com/$REPO_OWNER/$REPO_NAME/main"
-FILELIST_URL="$REPO_BASE/filelist.txt"
+FILELIST_URL="$REPO_BASE/filelist_android.txt"
 BOT_DIR="$HOME/PythonUserBot"
 VENV_DIR="$BOT_DIR/venv"
 CRON_FILE="$HOME/.termux/boot/start-pythonuserbot.sh"
@@ -79,8 +79,8 @@ download_files() {
   
   mkdir -p "$BOT_DIR/modules"
   
-  # Download filelist.txt
-  if ! curl -s "$FILELIST_URL" -o "$BOT_DIR/filelist.txt"; then
+  # Download filelist_android.txt
+  if ! curl -s "$FILELIST_URL" -o "$BOT_DIR/filelist_android.txt"; then
     echo -e "${RED}Failed to download file list. Check your internet connection or repository URL.${NC}"
     exit 1
   fi
@@ -108,7 +108,7 @@ download_files() {
         chmod +x "$dest_file"
       fi
     fi
-  done < "$BOT_DIR/filelist.txt"
+  done < "$BOT_DIR/filelist_android.txt"
 }
 
 # Function to create default config if it doesn't exist

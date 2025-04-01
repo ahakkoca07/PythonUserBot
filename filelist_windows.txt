@@ -1,0 +1,22 @@
+# List of files to be downloaded during installation/update
+# Core files
+main.py
+auth.py
+modules.py
+requirements.txt
+README.md
+
+# Configuration example (will not overwrite existing)
+config.ini.example
+
+# Module files
+modules/hello.py
+modules/echo.py
+
+# Installation scripts
+# install.sh
+install.bat
+# install_android.sh
+
+# Service files
+3 pythonuserbot.service
