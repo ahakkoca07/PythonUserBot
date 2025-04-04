@@ -26,6 +26,7 @@ if not exist "%LOG_DIR%" mkdir "%LOG_DIR%"
 :: Function to log messages
 call :log "========================================" 
 if "%UPDATE%"=="true" (
+    echo 
     call :log "Updating PythonUserBot..."
 ) else (
     call :log "Installing PythonUserBot..."
